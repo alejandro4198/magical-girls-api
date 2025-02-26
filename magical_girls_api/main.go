@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"      //normalito, mensajes en la terminal
 	"log"      //muestra los errores en la terminal
-	"net/http" // ---------
+	"net/http" //herramientas para crear web en Go
 
 	"github.com/gin-contrib/cors" // React se comunica con la API
 	"github.com/gin-gonic/gin"    // Framework para la API
@@ -11,7 +11,7 @@ import (
 	"gorm.io/gorm"                //ORM que interactua con la BD ----.--
 )
 
-// gin : peticiones HTTP
+// gin : peticiones en el host
 // gorm : BD
 // cors : conexion con react
 
@@ -223,7 +223,7 @@ func main() {
 
 	//CORS (Cross-Origin Resource Sharing), comunicacion entr el frontend y la API
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3002"},                 //opermitido (React), osea solo recibe la info de ahi
+		AllowOrigins:     []string{"http://localhost:3000"},                 //opermitido (React), osea solo recibe la info de ahi
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "PATCH"}, //los metodos permitidos
 		AllowHeaders:     []string{"Content-Type"},                          //le dice al server que la info ya esta en JSON y que ya se puede interpretar
 		AllowCredentials: true,                                              //permite las cookies, osea la info no se pierde en el navegador
