@@ -1,0 +1,67 @@
+/*Body se refiere a todo lo que afecta*/
+body {
+  font-family: Arial, sans-serif; /* tipo de letra es Arial, y si no esta disponible se usa una de sans-serif*/
+  background-color: #f3f3f3; /* fondo de todo */
+  text-align: center; /* todos los textos alineados al centro */
+}
+
+/* el titulo principal PROYECTO PA */
+h1 {
+  color: #405dff; /* el color del titulo */
+}
+
+/* orden de los registros de forma no ordenada */
+ul {
+  list-style: none; /* le quitamos las viñetas */
+  padding: 0; /* esto se hace pq los registros tienen un espacio y cuadno estan en 0px se quitan */
+}
+
+/* son los items de los registros o donde estaban las viñetas, osea los cuadrados donde esta la info de la gente*/
+li {
+  background: white; /* el fondo del contenedor es blanco, si no lo tiene coje el predeterminado */
+  margin: 10px auto; /* espacio entre registros arriba y abajo*/
+  padding: 10px; /* entre un borde y el contenido hay 10px de espacio  */
+  width: 300px; /* ancho del contenedor */
+  border-radius: 8px; /* redondea los bordes */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /*  les agrega una sombrita para que se vea mejor */
+}
+
+/* Estilo de los botones */
+button {
+  display: inline-block; /* este hace que el texto se adapte al ancho del boton, si tiene 5 caracteres el texto, va a rodear esos caracteres */
+  margin: 10px; /* este es un margen externo, osea hay un espacio de 10px entre botones */
+  padding: 10px 15px; /* un relleno dentro del boton, los 10px son de arriba y abajo, mientras que los 15px son de izquierda y derecha */
+  font-size: 16px; /* da el tamaño de la letra */ 
+  background-color: #405dff; /* fondo del boton */
+  color: white; /* color del texto */
+  border: none; /* quita el borde del boton */
+  border-radius: 5px; /* las esquinas redondas */
+  cursor: pointer; /* este es cuando este sobre el boton, el cursor ponga la manita de click */
+  transition: background 0.3s; /* este es un cambio despacio entre colores cuando el boton pasa sobre el */
+}
+
+/* esta es la funcion de cuando el cursor pasa por el boton */
+button:hover {
+  background-color: #7a89db; /* cambia de color cuando el cursor este ahi */
+}
+
+/* formulario, la caja */
+form {
+  display: flex; /* organizar y alinear los elementos del formulario */
+  flex-direction: column; /* la forma de organizar las cosas del formulario, en este caso de forma columna */
+  width: 300px; /* un ancho fijo de 300px de todo el formulario */
+  margin: 20px auto; /* entre elementos del formulario hay un espacio de 20px de arriba y abajo */
+  padding: 20px; /* un espacio interno de 20px de izquierda y derecha */
+  background: rgb(223, 218, 218); /* fondo del formulario */
+  border-radius: 10px; /* los bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* la sombra */
+}
+
+/* los huecos para ingresar la informacion */
+input {
+  margin-bottom: 10px; /* arriba y abajo hay 10px de espacio */
+  padding: 8px; /* adentro hay 8px de espacio, en la izquierda y derecha  */
+  font-size: 16px; /* el tamaño de las letras  */ 
+  border: 1px solid #ddd; /* los bordes de las cositas esas */
+  border-radius: 5px; /* bordes redondeados */
+}
