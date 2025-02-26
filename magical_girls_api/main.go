@@ -223,7 +223,7 @@ func main() {
 
 	//CORS (Cross-Origin Resource Sharing), comunicacion entr el frontend y la API
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3001"},                 //opermitido (React), osea solo recibe la info de ahi
+		AllowOrigins:     []string{"http://localhost:3002"},                 //opermitido (React), osea solo recibe la info de ahi
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "PATCH"}, //los metodos permitidos
 		AllowHeaders:     []string{"Content-Type"},                          //le dice al server que la info ya esta en JSON y que ya se puede interpretar
 		AllowCredentials: true,                                              //permite las cookies, osea la info no se pierde en el navegador
